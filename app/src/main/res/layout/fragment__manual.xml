@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_Manual"
+    android:background="@color/black"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            ></Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual mode"
+            android:textColor="@color/white"
+            ></TextView>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"></Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+            <!-- Set Outputs -->
+            <FrameLayout
+                android:id="@+id/ID_ButtonFrameSetOutputs"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ID_ButtonImageSetOutputs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/disable"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <TextView
+                    android:id="@+id/ID_ButtonTextSetOutputs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Set Outputs"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+            </FrameLayout><!-- Finish create new image button -->
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            ></Space>
+
+        <!--Outputs linear layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.16"
+            >
+
+
+            <!-- OutPut1 -->
+            <FrameLayout
+                android:id="@+id/ID_ButtonFrameOutPut1"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ID_ButtonImageOutput1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/disable"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <TextView
+                    android:id="@+id/ID_ButtonTextOutput1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Output 1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+            </FrameLayout><!-- Finish create new image button -->
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                ></Space>
+
+            <!-- OutPut2 -->
+            <FrameLayout
+                android:id="@+id/ID_ButtonFrameOutPut2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ID_ButtonImageOutput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/disable"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <TextView
+                    android:id="@+id/ID_ButtonTextOutput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Output 2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+            </FrameLayout><!-- Finish create new image button -->
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+               ></Space>
+
+            <!-- OutPut3 -->
+            <FrameLayout
+                android:id="@+id/ID_ButtonFrameOutPut3"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ID_ButtonImageOutput3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/disable"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <TextView
+                    android:id="@+id/ID_ButtonTextOutput3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Output 3"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+            </FrameLayout><!-- Finish create new image button -->
+
+
+
+
+
+
+        </LinearLayout><!--Outputs linear layout-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

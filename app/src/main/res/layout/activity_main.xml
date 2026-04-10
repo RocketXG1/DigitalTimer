@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/vector1"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <!-- Linear layout for menu buttons -->
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           id="@+id/ID_navigationMenu"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+           app:menu="@menu/fragmentmenu"
+           android:background="@android:color/transparent"
+            app:itemIconSize="35dp"
+            app:itemActiveIndicatorStyle="@style/Widget.App.BottomNavigationView.Indicator"
+           app:itemIconTint="@color/bottom_new_color_selector"
+           app:itemTextColor="@color/white"
+           android:layout_weight="0.33"
+           app:itemTextAppearanceActive="@style/TextAppearance.App.BottomNavigationView"
+           app:itemTextAppearanceInactive="@style/TextAppearance.App.BottomNavigationView"
+
+
+           ></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_weight="0.33"
+            >
+
+        </Space>
+
+
+        <FrameLayout
+            android:id="@+id/ID_fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

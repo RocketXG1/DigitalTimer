@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/ID_itemDeviceConection"
+        android:icon="@drawable/ic_deviceconnection"
+        android:title="Connection"
+
+
+        />
+
+    <item
+        android:id="@+id/ID_itemMonitoring"
+        android:icon="@drawable/ic_monitoring"
+        android:title="Monitoring"
+
+        />
+
+    <item
+        android:id="@+id/ID_itemManual"
+        android:icon="@drawable/ic_manual"
+        android:title="Manual"
+
+        />
+
+    <item
+        android:id="@+id/ID_itemSetAlarm"
+        android:icon="@drawable/ic_setalarm"
+        android:title="Set alarm"
+
+        />
+
+    <item
+        android:id="@+id/ID_itemDetails"
+        android:icon="@drawable/ic_details"
+        android:title="Details"
+
+        />
+
+    <item
+        android:id="@+id/ID_itemSetCofiguration"
+        android:icon="@drawable/ic_setconfiguration"
+        android:title="Configuration"
+
+        />
+
+</menu>

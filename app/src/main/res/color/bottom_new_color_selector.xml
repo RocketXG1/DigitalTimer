@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Color para el estado SELECCIONADO -->
+    <item android:state_checked="true" android:color="#000000" /> <!-- Amarillo/Naranja, ¡cámbialo por el que quieras! -->
+
+    <!-- Color para el estado por defecto (NO seleccionado) -->
+    <item android:state_checked="false" android:color="@color/white" />
+
+
+
+</selector>

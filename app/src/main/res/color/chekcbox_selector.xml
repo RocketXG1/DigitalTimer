@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado cuando está marcado (checked) -->
+    <item android:color="#E62C6A" android:state_checked="true" />
+    <!-- Estado cuando no está marcado -->
+    <item android:color="@android:color/darker_gray" android:state_checked="false" />
+    <!-- Estado por defecto -->
+    <item android:color="@android:color/darker_gray" />
+
+
+</selector>

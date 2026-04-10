@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DigitalTimer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DigitalTimer" parent="Base.Theme.DigitalTimer" />
+
+    <!-- ESTILO PARA EL INDICADOR DEL MENÚ INFERIOR -->
+    <style name="Widget.App.BottomNavigationView.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <!-- CAMBIA ESTE COLOR POR EL QUE QUIERAS PARA EL RECTÁNGULO -->
+        <item name="android:color">#60EF64</item> <!-- Ejemplo: Un color verde -->
+    </style>
+
+
+
+    <style name="TextAppearance.App.BottomNavigationView" parent="Theme.Material3.DayNight.NoActionBar" >
+        <item name="android:textSize">10dp</item>
+    </style>
+
+
+</resources>
