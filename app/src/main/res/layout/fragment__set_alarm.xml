@@ -182,12 +182,59 @@
             >
 
             <CheckBox
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="1.5"
+                android:scaleX="1"
                 android:scaleY="1.5"
                 android:text="Moday"
                 android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1.5"
+                android:text="Tuesday"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1.5"
+                android:text="Wednesday"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1.5"
+                android:text="Thursday"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1.5"
+                android:text="Friday"
+                android:textColor="@color/white"></CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1.5"
+                android:text="Saturday"
+                android:textColor="@color/white"></CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1.5"
+                android:text="Friday"
+                android:textColor="@color/white"></CheckBox>
+
 
 
 
