@@ -1,10 +1,12 @@
 package com.example.digitaltimer
 
 import android.os.Bundle
+import android.util.TypedValue
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.NumberPicker
 import android.widget.TimePicker
 
 class fragment_SetAlarm : Fragment() {
@@ -23,9 +25,18 @@ class fragment_SetAlarm : Fragment() {
         return inflater.inflate(R.layout.fragment__set_alarm, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val timePicker = view.findViewById<TimePicker>(R.id.ID_TimePicker24h)
-        timePicker.setIs24HourView(true)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        val numberPicker = requireView().findViewById<NumberPicker>(R.id.ID_PickerAlarms)
+
+        numberPicker.minValue = 1
+        numberPicker.maxValue = 50
+        numberPicker.wrapSelectorWheel = true
+
+
+
+
     }
+
 }
