@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment_SetAlarm"
-    android:background="@color/black"
-    android:orientation="vertical"
-    >
+
+    android:orientation="vertical">
     <Space
         android:layout_width="wrap_content"
         android:layout_height="3dp"
@@ -21,13 +21,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+
             >
 
             <NumberPicker
                 android:id="@+id/ID_PickerAlarms"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-
+                android:layout_marginLeft="50dp"
                 ></NumberPicker>
 
             <Space
@@ -157,17 +158,24 @@
                     android:orientation="vertical">
 
                     <CheckBox
+                        android:id="@+id/ID_CheckBoxMonday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Monday"
-                        android:textColor="@color/white"></CheckBox>
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/checkbox_state"
+
+
+
+                        ></CheckBox>
 
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Tuesday"
+                        android:buttonTint="@color/checkbox_state"
                         android:textColor="@color/white"></CheckBox>
 
                     <CheckBox
@@ -175,6 +183,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Wednesday"
+                        android:buttonTint="@color/checkbox_state"
                         android:textColor="@color/white"></CheckBox>
 
                     <CheckBox
@@ -182,6 +191,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Thursday"
+                        android:buttonTint="@color/checkbox_state"
                         android:textColor="@color/white"></CheckBox>
 
                 </LinearLayout>
@@ -197,6 +207,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Friday"
+                        android:buttonTint="@color/checkbox_state"
                         android:textColor="@color/white"></CheckBox>
 
                     <CheckBox
@@ -204,6 +215,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Saturday"
+                        android:buttonTint="@color/checkbox_state"
                         android:textColor="@color/white"></CheckBox>
 
                     <CheckBox
@@ -211,6 +223,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:text="Sunday"
+                        android:buttonTint="@color/checkbox_state"
                         android:textColor="@color/white"></CheckBox>
 
                 </LinearLayout>
@@ -232,11 +245,46 @@
                     android:textColor="@color/white"
                     android:textSize="16sp"></TextView>
 
-                <TimePicker
-                    android:id="@+id/ID_TimePicker24h"
+                <NumberPicker
+                    android:id="@+id/ID_NumbPickHours"
                     android:layout_width="wrap_content"
-                    android:layout_height="140dp"
-                    android:timePickerMode="spinner"></TimePicker>
+                    android:layout_height="wrap_content"
+                    ></NumberPicker>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"></TextView>
+
+                <NumberPicker
+                    android:id="@+id/ID_NumbPickMinutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></NumberPicker>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"></TextView>
+
+
+                <NumberPicker
+                    android:id="@+id/ID_NumbPickSeconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></NumberPicker>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    ></Space>
+
+                <NumberPicker
+                    android:id="@+id/ID_NumbPickAmPm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></NumberPicker>
+
+
 
             </LinearLayout>
 
